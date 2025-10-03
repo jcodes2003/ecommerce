@@ -24,3 +24,22 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* small helper utilities used by components */
+.bg-background { background-color: var(--background); }
+.text-foreground { color: var(--foreground); }
+.bg-foreground { background-color: var(--foreground); }
+.text-background { color: var(--background); }
+
+@keyframes float-y {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
+.animate-float { animation: float-y 3s ease-in-out infinite; }
+
